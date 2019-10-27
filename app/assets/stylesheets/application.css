@@ -25,15 +25,14 @@
   text-align: left;
 }
 
-
-table {
-  border-collapse: collapse;
+#ptable {
+  text-align: left;
 }
 
-th {
-  text-align: center;
+#ptable tr:nth-child(even){
+  background-color:#D0E4F5;
 }
 
-table, th, td {
-  border: none;
-} 
+#ptable tr:nth-child(odd){
+  background-color:#f2f2f2;
+}
