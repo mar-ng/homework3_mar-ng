@@ -1,0 +1,42 @@
+<%= form_with(model: test, local: true) do |form| %>
+  <% if test.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(test.errors.count, "error") %> prohibited this test from being saved:</h2>
+
+      <ul>
+        <% test.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :testing %>
+    <%= form.text_field :testing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :single %>
+    <%= form.time_select :single %>
+  </div>
+
+  <div class="field">
+    <%= form.label :double %>
+    <%= form.date_select :double %>
+  </div>
+
+  <div class="field">
+    <%= form.label :triple %>
+    <%= form.datetime_select :triple %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quad %>
+    <%= form.datetime_select :quad %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

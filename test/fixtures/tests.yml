@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  testing: MyString
+  single: 2019-11-06 16:09:02
+  double: 2019-11-06
+  triple: 2019-11-06 16:09:02
+  quad: 2019-11-06 16:09:02
+
+two:
+  testing: MyString
+  single: 2019-11-06 16:09:02
+  double: 2019-11-06
+  triple: 2019-11-06 16:09:02
+  quad: 2019-11-06 16:09:02

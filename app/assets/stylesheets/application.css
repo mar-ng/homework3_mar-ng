@@ -14,25 +14,158 @@
  *= require_self
  */
 
-* {
-    font-family: Helvetica, Arial, Sans-Serif;
+body{
+  background-color:#fff;
+  color:#333;
+  margin:33px;
+  font-family:verdana, arial, helvetica, sans-serif;
+  font-size:13px;line-height:18px
 }
 
-#header {
-  border: 1px solid black;
-  padding: 10px;
-  background-color: lightgray;
-  text-align: left;
+p,ol,ul,td{
+  font-family:verdana, arial, helvetica, sans-serif;
+  font-size:13px;
+  line-height:18px
 }
 
-#ptable {
-  text-align: left;
+pre{
+  background-color:#eee;
+  padding:10px;
+  font-size:11px
 }
 
-#ptable tr:nth-child(even){
-  background-color:#D0E4F5;
+a{
+  color:#000
 }
 
-#ptable tr:nth-child(odd){
-  background-color:#f2f2f2;
+a:visited{
+  color:#666
+}
+
+a:hover{
+  color:#fff;
+  background-color:#000
+}
+
+th{
+  padding-bottom:5px
+}
+
+td{
+  padding:0 5px 7px
+}
+
+div.field,div.actions{margin-bottom:10px}
+
+#notice{
+  color:green
+}
+
+.field_with_errors{
+  padding:2px;
+  background-color:red;
+  display:table
+}
+
+#error_explanation{
+  width:450px;
+  border:2px solid red;
+  padding:7px 7px 0;
+  margin-bottom:20px;
+  background-color:#f0f0f0
+}
+
+#error_explanation h2{
+  text-align:left;
+  font-weight:bold;
+  padding:5px 5px 5px 15px;
+  font-size:12px;
+  margin:-7px -7px 0;
+  background-color:#c00;
+  color:#fff
+}
+
+#error_explanation ul li{
+  font-size:12px;
+  list-style:square
+}
+
+label{
+  display:block
+}
+
+body{
+  font-family:"helvetica"
+}
+
+#header{
+  padding:10px;
+  background-color:lightgray;
+  border:1px solid black
+}
+
+table.ptable{
+  background-color:#EEEEEE;
+  width:100%;
+  text-align:left;
+  border-collapse:collapse
+}
+
+table.ptable td,table.ptable th{
+  border:1px solid #AAAAAA;
+  padding:3px 2px
+}
+
+table.ptable tbody td{
+  font-size:13px
+}
+
+table.ptable tr:nth-child(odd){
+  background:#D0E4F5
+}
+
+table.ptable thead{
+  background:#EEEEEE
+}
+
+table.ptable thead th{
+  font-size:13px;
+  font-weight:bold;
+  background: #EEEEEE
+}
+
+table.ptable thead th:first-child{
+  border-left:none
+}
+
+table.ptable tfoot{
+  font-size:14px;
+  font-weight:bold;
+  color:#FFFFFF;
+  background:#D0E4F5;
+  background:-moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background:-webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background:linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top:2px solid #444444
+}
+
+table.ptable tfoot td{
+  font-size:14px
+}
+
+table.ptable tfoot .links{
+  text-align:right
+}
+
+table.ptable tfoot .links a{
+  display:inline-block;
+  background:#1C6EA4;
+  color:#FFFFFF;
+  padding:2px 8px;
+  border-radius:5px
+}
+
+.location-table{
+  margin:10px;
+  padding:10px
 }

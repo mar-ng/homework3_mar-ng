@@ -4,13 +4,12 @@
   <%= @physician.name %>
 </h2>
 
-<h3>
-  <%= @physician.specialty %>
-</h3>
+<h3>Specialty: <%= @physician.specialty %></h3>
+
+<hr>
 
 <h3> Office Locations </h3>
-<div id="ptable">
-<table>
+<table class="ptable">
   <thead>
     <tr>
       <th>Street Address</th>
@@ -30,11 +29,9 @@
     <% end %>
   </tbody>
 </table>
-</div>
 
 <h3> Current Appointments </h3>
-<div id="ptable">
-<table>
+<table class="ptable">
   <thead>
     <tr>
       <th>Patient Name</th>
@@ -42,18 +39,17 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-</div>
 
   <tbody>
     <%  @physician.appointments.each do |appointment| %>
       <tr>
         <td><%= appointment.patient.name %></td>
-        <td><%= appointment.visit %></td>
+        <td><%= appointment.visit.to_formatted_s(:long_ordinal) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-</div>
+
 
 
 <%= link_to 'Edit', edit_physician_path(@physician) %> |
